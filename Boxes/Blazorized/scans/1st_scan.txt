@@ -1,0 +1,46 @@
+# Nmap 7.94SVN scan initiated Thu Aug  1 12:20:39 2024 as: nmap -sT -sV --version-all -Pn -p- -n --disable-arp -oN /home/user/Documents/HacktheBox-Writeups/Boxes/Blazorized/scans/1st_scan.txt 10.10.11.22
+Nmap scan report for 10.10.11.22
+Host is up (0.11s latency).
+Not shown: 65507 closed tcp ports (conn-refused)
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+80/tcp    open  http          Microsoft IIS httpd 10.0
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2024-08-01 12:37:25Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: blazorized.htb0., Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+1433/tcp  open  ms-sql-s      Microsoft SQL Server
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: blazorized.htb0., Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+9389/tcp  open  mc-nmf        .NET Message Framing
+47001/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49664/tcp open  msrpc         Microsoft Windows RPC
+49665/tcp open  msrpc         Microsoft Windows RPC
+49666/tcp open  msrpc         Microsoft Windows RPC
+49667/tcp open  msrpc         Microsoft Windows RPC
+49673/tcp open  msrpc         Microsoft Windows RPC
+49674/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+49675/tcp open  msrpc         Microsoft Windows RPC
+49676/tcp open  msrpc         Microsoft Windows RPC
+49682/tcp open  msrpc         Microsoft Windows RPC
+49776/tcp open  ms-sql-s      Microsoft SQL Server
+49814/tcp open  msrpc         Microsoft Windows RPC
+54990/tcp open  msrpc         Microsoft Windows RPC
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1433-TCP:V=7.94SVN%I=9%D=8/1%Time=66AB817E%P=x86_64-pc-linux-gnu%r(
+SF:ms-sql-s,25,"\x04\x01\0%\0\0\x01\0\0\0\x15\0\x06\x01\0\x1b\0\x01\x02\0\
+SF:x1c\0\x01\x03\0\x1d\0\0\xff\x10\0\x04\[\0\0\0\0");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port49776-TCP:V=7.94SVN%I=9%D=8/1%Time=66AB81C7%P=x86_64-pc-linux-gnu%r
+SF:(ms-sql-s,25,"\x04\x01\0%\0\0\x01\0\0\0\x15\0\x06\x01\0\x1b\0\x01\x02\0
+SF:\x1c\0\x01\x03\0\x1d\0\0\xff\x10\0\x04\[\0\0\0\0");
+Service Info: Host: DC1; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug  1 12:40:07 2024 -- 1 IP address (1 host up) scanned in 1168.49 seconds
